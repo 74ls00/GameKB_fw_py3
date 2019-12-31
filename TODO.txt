@@ -1,0 +1,14 @@
+Добавить поддержку программатора AVRDUDE_PROG 3.3
+https://microkontroller.ru/programmirovanie-mikrokontrollerov-avr/avrdude_prog-programmirovanie-avr/
+скачать https://microkontroller.ru/?dl_id=71 содержит дубликаты файлов.
+форум https://www.yourdevice.net/forum/viewtopic.php?f=18&t=1348
+
+Сделать запускатор autoit для вызова програматора.
+Если в режиме гостя, давать сообщение об возможной ошибке.
+Если avrdudeprog.exe запущен, выдавать сообщение.
+Проверять не запущен ли avrdude и просить завершить.
+иначе, запускать этот программатор.
+
+
+
+
