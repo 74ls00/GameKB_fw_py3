@@ -1,0 +1,61 @@
+Установить python-3.7.6-amd64
+В начале установки поставить галочку добавление path
+перезагрузить ос.
+
+(https://www.wxpython.org/pages/downloads/)
+из консоли винды
+pip install -U wxPython
+
+https://issue.life/questions/27885397
+pip install cx-Freeze
+
+==================================================================================
+Сборка Keymapper
+http://dhowland.github.io/EasyAVR/build/html/keymapper.html#building-the-keymapper
+
+Сборка прошивки package.bat
+Компиляция cxFreeze.bat
+сборка будет в keymapper\build\exe.win-amd64-3.7
+
+keymapper/easykeymap/exttools папка для дополнительных модулей.
+поддержка dfu-programmer.exe и teensy_loader_cli.exe требуют сторонней установки.
+
+==================================================================================
+
+в сборку добавить библиотеки из
+%LOCALAPPDATA%\Programs\Python\Python37\Lib\site-packages\wx
+__version__.py=4.0.7.post2 release
+
+по авторскому варианту для запуска хватило
+wxbase30u_net_vc140_x64.dll
+wxbase30u_vc140_x64.dll
+wxmsw30u_adv_vc140_x64.dll
+wxmsw30u_core_vc140_x64.dll
+wxmsw30u_propgrid_vc140_x64.dll
+
+возможно системные
+MSVCP140.dll
+VCRUNTIME140.dll
+
+а также копирование python37.dll из корневой в lib
+
+в новой сборке не оказалось
+_decimal.pyd _multiprocessing.pyd
+возможно не нужны или перенесены.
+
+==================================================================================
+
+Сборка моей версии.
+
+добавить клавиатуру
+G:\home\Documents\Projects\EAGLE\Keyboard\firmware\GameKB_EasyAVR\keymapper\easykeymap\boards
+_korbord.py
+в G:\home\Documents\Projects\EAGLE\Keyboard\firmware\EasyAVR-master\keymapper\easykeymap\boards
+
+добавить локализацию
+scancodes.py
+
+
+
+
+
